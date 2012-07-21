@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Pagoda Box Quickstart for Codeigniter by brodkinca</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Pagoda Box Quickstart for Codeigniter</h1>
+        <p>CodeIgniter Application Prototype Bundle</p>
+
+        <p class="view"><a href="https://github.com/brodkinca/BCA-QS-Codeigniter">View the Project on GitHub <small>brodkinca/BCA-QS-Codeigniter</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/brodkinca/BCA-QS-Codeigniter/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/brodkinca/BCA-QS-Codeigniter/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/brodkinca/BCA-QS-Codeigniter">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>Pagoda Box Quickstart for Codeigniter</h1>
+
+<h2>Getting Started: Pulling From Pagoda Box</h2>
+
+<h3>The Easy Way</h3>
+
+<p>Because this quickstart utilizes <a href="http://www.kernel.org/pub/software/scm/git/docs/git-submodule.html">Git submodules</a> a simple git clone isn't the easiest way to pull down the source.  Instead, issue the following command:</p>
+
+<pre><code>git clone --recursive &lt;repo_url&gt;
+</code></pre>
+
+<h3>The Hard Way</h3>
+
+<p>If you already rushed into things and did a <em>git pull</em> you can do one of two things:</p>
+
+<ol>
+<li>Delete the repository from your computer and pull it down from Pagoda Box again using the "easy" instructions.</li>
+<li>Issue the following commands from your repository root and make it all better:</li>
+</ol><pre lang="ssh"><code>git submodule init
+git submodule update
+</code></pre>
+
+<h2>Why Submodules?</h2>
+
+<p>This quickstart is similar to other quickstarts for Codeigniter except that it comes bundled with Codeigniter as submodule.  If you are unfamiliar with submodules in Git you should refer to the <a href="http://www.kernel.org/pub/software/scm/git/docs/git-submodule.html">manual page</a> on submodules.  The benefit of loading Codeigniter as a submodule is that Codeigniter's source is maintained in its own repository and your application's repository contains nothing other than the application's source code and a pointer to which version of Codeigniter you're using.</p>
+
+<h2>Upgrading Codeigniter</h2>
+
+<p>When you want to pull down the latest version of codeigniter, just navigate to the hidden <em>.codeigniter</em> directory and issue the following command:</p>
+
+<pre><code>git pull origin master
+</code></pre>
+
+<p>At this point you have the latest version of Codeigniter and can test it in your local development environment.</p>
+
+<p>But wait, we're not done yet! To continue using this new Codeigniter version you have to tell your local repository that you've switched versions.  To do so simply navigate back to your main repository and issue this command:</p>
+
+<pre><code>git commit .codeigniter -m 'Updated Codeigniter'
+</code></pre>
+
+<p>From now on your application will deploy with the latest version!</p>
+
+<h1></h1>
+
+<p>Brought to you by <a href="http://brodkinca.com">Brodkin CyberArts</a></p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/brodkinca">brodkinca</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
